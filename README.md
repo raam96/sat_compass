@@ -6,20 +6,27 @@ True north is different from magnetic north, which is the direction towards the 
 To calculate the heading relative to magnetic north, you will need to use a magnetometer or compass sensor in addition to the GPS modules. The magnetometer or compass sensor can be used to measure the Earth's magnetic field and calculate the heading relative to magnetic north.
 
 to Calculate distance and bearing between GPS module 1 and GPS module 2
+
 d12 = distance(lat1, lon1, lat2, lon2)
+
 b12 = bearing(lat1, lon1, lat2, lon2)
 
 to Calculate distance and bearing between GPS module 2 and GPS module 3
+
 d23 = distance(lat2, lon2, lat3, lon3)
+
 b23 = bearing(lat2, lon2, lat3, lon3)
 
 to  Calculate distance and bearing between GPS module 3 and GPS module 1
+
 d31 = distance(lat3, lon3, lat1, lon1)
+
 b31 = bearing(lat3, lon3, lat1, lon1)
 
 Then, you can calculate the average distance and bearing between the three GPS modules using the following formulas:
 
 d_avg = (d12 + d23 + d31) / 3
+
 b_avg = (b12 + b23 + b31) / 3
 
 Finally, you can use the average distance and bearing to calculate the true heading of the vessel using the following formula:
