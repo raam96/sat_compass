@@ -5,15 +5,15 @@ The true heading calculated using the Haversine formula and bearing formula is b
 True north is different from magnetic north, which is the direction towards the Earth's magnetic North Pole. The Earth's magnetic field is not aligned with the Earth's rotational axis, and the magnetic North Pole is not fixed in place. As a result, the direction of magnetic north changes over time and is different in different locations on the Earth's surface.
 To calculate the heading relative to magnetic north, you will need to use a magnetometer or compass sensor in addition to the GPS modules. The magnetometer or compass sensor can be used to measure the Earth's magnetic field and calculate the heading relative to magnetic north.
 
-// Calculate distance and bearing between GPS module 1 and GPS module 2
+to Calculate distance and bearing between GPS module 1 and GPS module 2
 d12 = distance(lat1, lon1, lat2, lon2)
 b12 = bearing(lat1, lon1, lat2, lon2)
 
-// Calculate distance and bearing between GPS module 2 and GPS module 3
+to Calculate distance and bearing between GPS module 2 and GPS module 3
 d23 = distance(lat2, lon2, lat3, lon3)
 b23 = bearing(lat2, lon2, lat3, lon3)
 
-// Calculate distance and bearing between GPS module 3 and GPS module 1
+to  Calculate distance and bearing between GPS module 3 and GPS module 1
 d31 = distance(lat3, lon3, lat1, lon1)
 b31 = bearing(lat3, lon3, lat1, lon1)
 
